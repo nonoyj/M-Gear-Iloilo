@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Piano keyboard">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3d00"/>
+      <stop offset="0.55" stop-color="#ff7a00"/>
+      <stop offset="1" stop-color="#ffb300"/>
+    </linearGradient>
+    <linearGradient id="keys" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#cfc6e8"/>
+      <stop offset="0.35" stop-color="#ebe7f8"/>
+      <stop offset="1" stop-color="#ddd6f1"/>
+    </linearGradient>
+    <clipPath id="body"><rect x="60" y="60" width="136" height="136" rx="6"/></clipPath>
+  </defs>
+  <rect width="256" height="256" rx="58" fill="url(#bg)"/>
+  <!-- keyboard frame + soft shadow -->
+  <rect x="56" y="58" width="144" height="144" rx="9" fill="#5a2a00" opacity=".18" transform="translate(0 4)"/>
+  <rect x="56" y="56" width="144" height="144" rx="9" fill="#8d84a9"/>
+  <g clip-path="url(#body)">
+    <rect x="60" y="60" width="136" height="136" fill="url(#keys)"/>
+    <!-- white key dividers -->
+    <g stroke="#9d94b8" stroke-width="2">
+      <path d="M94 96v100M128 96v100M162 96v100"/>
+    </g>
+    <!-- dark top rail -->
+    <rect x="60" y="60" width="136" height="38" fill="#3f3160"/>
+    <!-- black keys -->
+    <g fill="#4b3a73">
+      <rect x="84" y="60" width="20" height="68" rx="4"/>
+      <rect x="118" y="60" width="20" height="68" rx="4"/>
+      <rect x="152" y="60" width="20" height="68" rx="4"/>
+    </g>
+    <g fill="#fff" opacity=".18">
+      <rect x="86" y="62" width="4" height="62" rx="2"/>
+      <rect x="120" y="62" width="4" height="62" rx="2"/>
+      <rect x="154" y="62" width="4" height="62" rx="2"/>
+    </g>
+  </g>
+</svg>
